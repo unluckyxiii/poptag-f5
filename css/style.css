@@ -1,0 +1,26 @@
+/*global*/
+html{font-family:Helvetica,Arial,sans-serif;color:#666;background:#f4f4f4;}
+a{color:#ff5555;}
+.toppadding{padding:10% 0;}
+.width50{width:50%;}
+
+/*header*/
+.logo{width:100px;}
+nav ul li i{color:#bbb;font-size:1.8em;}
+nav ul li:hover i{color:#fff;}
+
+/*content*/
+
+/*register-signin*/
+.dialogue{color:#bbb;background:#fff;}
+form{padding-top:2%;}
+label i{color:#ff5555;font-size:2.8em;line-height:0.5em;}
+.note{font-size:0.875em;}
+
+/*desktop*/
+
+
+/*tablet*/
+
+
+/*mobile*/

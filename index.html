@@ -1,0 +1,158 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poptag</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#"><img class="logo" src="img/logo-204x60.png" /></a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+    
+      <section class="top-bar-section">
+        <ul class="right">
+        	<li><a href="#"><i class="fi-plus"></i></a></li>
+            <li><a href="#"><i class="fi-magnifying-glass"></i></a></li>
+            <li><a href="#"><i class="fi-calendar"></i></a></li>
+            <li class="has-dropdown">
+                <a href="#"><i class="fi-widget"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Setting</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </li>
+        </ul>
+      </section>
+    </nav>
+    
+    <div class="row toppadding">
+      <div class="small-12 medium-10 large-8 small-centered columns">
+      	<div class="dialogue">
+	        <ul class="tabs" data-tab data-options="deep_linking:true">
+              <li class="tab-title width50 active"><a href="#registerform">Register</a></li>
+              <li class="tab-title width50"><a href="#signinform">Sign In</a></li>
+            </ul>
+            <div class="tabs-content">
+              <div class="content active" id="registerform">
+                <form>
+                  <div class="row">
+                    <div class="small-10 medium-10 large-10 small-centered">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="registeremail" class="right"><i class="fi-mail"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="registeremail" placeholder="Enter your email address">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="registerpassword" class="right"><i class="fi-lock"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="registerpassword" placeholder="Enter your password">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <input id="read" type="checkbox"><label for="read">Read and agree on the <a href="#" data-reveal-id="tcmodal">Terms & Conditions</a></label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="submit" class="button expand" id="registersubmit" value="Register">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <p class="note">Already signed up? Log in <a href="#signinform">here</a>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="content" id="signinform">
+                <form>
+                  <div class="row">
+                    <div class="small-10 medium-10 large-10 small-centered">
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="email" class="right"><i class="fi-mail"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="email" placeholder="Enter your email address">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="password" class="right"><i class="fi-lock"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="password" placeholder="Enter your password">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <input id="remember" type="checkbox"><label for="remember">Remember my password</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="submit" class="button expand" id="registersignin" value="Sign In">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <p class="note">Need a new account? Register <a href="#registerform">here</a>.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      	</div>
+      </div>
+    </div><!--register & sign in-->
+
+	<div id="tcmodal" class="reveal-modal" data-reveal>
+      <h2>Terms & Conditions</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet suscipit mattis. Nullam at ligula non massa ullamcorper bibendum dictum sit amet risus. Fusce quis ante ante. Sed ut nisl vitae augue adipiscing imperdiet. Phasellus placerat eleifend interdum. Mauris sit amet mauris ante. Maecenas pretium metus et adipiscing posuere. Maecenas nec nisl magna. Mauris dapibus varius neque, ac sagittis velit ultricies vel. Pellentesque magna risus, aliquet id tempor eget, aliquet in leo. Phasellus eu nunc cursus, iaculis lectus nec, vestibulum erat.</p>
+      <p>Vestibulum justo quam, euismod a lacus ut, porta rhoncus elit. Sed consectetur rutrum felis id auctor. Phasellus ornare sodales tempus. Phasellus malesuada risus dui, vitae dapibus tellus fringilla sed. Quisque nisl felis, facilisis non molestie ornare, ultricies vel massa. Etiam ullamcorper, nunc a tristique commodo, arcu felis congue arcu, vitae lobortis nibh arcu eget ipsum. Proin molestie in nisi nec malesuada. Vivamus semper ultrices elementum. Donec at erat at lorem vehicula placerat. Quisque fringilla pellentesque enim, non tincidunt massa vestibulum non. Fusce nisi lacus, ornare non metus ac, hendrerit dapibus nisi. Mauris at erat nec purus vulputate rutrum in a felis. Aenean id orci sed dolor viverra dapibus. Nulla in risus ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Maecenas commodo, erat in bibendum condimentum, ligula turpis rhoncus augue, sit amet tristique urna velit eu nisi. Vestibulum sagittis odio enim, eget cursus augue vehicula non. Suspendisse pellentesque ante quis ipsum sagittis tincidunt. Quisque non augue ut purus luctus pellentesque vitae in neque. Maecenas porttitor rutrum purus aliquam feugiat. Sed lacinia scelerisque odio, ac lacinia tellus dignissim non. Nam at sollicitudin dui. Vivamus auctor vestibulum sodales. Vestibulum ac lacinia neque. Etiam magna neque, molestie sodales nulla nec, suscipit faucibus libero.</p>
+      <a class="close-reveal-modal">&#215;</a>
+    </div><!--terms & conditions-->
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.accordion.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

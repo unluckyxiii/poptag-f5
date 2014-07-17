@@ -2,20 +2,43 @@
 html{font-family:Helvetica,Arial,sans-serif;color:#666;background:#f4f4f4;}
 a{color:#ff5555;}
 .toppadding{padding:10% 0;}
+.toppadding5{padding:5% 0;}
 .width50{width:50%;}
+.width33{width:33.33%;}
+
 
 /*header*/
 .logo{width:100px;}
 nav ul li i{color:#bbb;font-size:1.8em;}
 nav ul li:hover i{color:#fff;}
+ul.dropdown li a{font-size:1em;}
+.dropdown i{padding:0 10px;}
 
-/*content*/
+/*post*/
+.post{float:left;width:100%;margin:20px 0;border:1px solid #f4f4f4;}
+.post .hashtags{margin:10px;line-height:1.2em;}
+.post .hashtags a{color:#bbb;}
+.post .hashtags a:hover{color:#ff5555;}
+.post .date{margin:0 10px;color:#ff5555;font-weight:800;}
+.post .location{margin:0 10px 10px 10px;color:#ff5555;font-weight:800;}
+.post .interaction{list-style:none;width:100%;margin:0;}
+.post .interaction li{float:left;width:33.33%;font-size:1.5em;text-align:center;border:1px solid #f9f9f9;}
+.post .interaction a{color:#bbb;}
+.post .interaction li:hover a{color:#ff5555;}
+.post .user{float:left;width:100%;margin:0 10px;}
+.post .user a{color:#bbb;}
+.post .user img{margin:10px 10px 10px 0;border:1px solid #f9f9f9;}
+.post .user:hover a{color:#ff5555;}
+.post .interaction .liked a, .post .interaction .added a, .post .interaction .commented a{color:#ff5555;}
 
 /*register-signin*/
 .dialogue{color:#bbb;background:#fff;}
 form{padding-top:2%;}
 label i{color:#ff5555;font-size:2.8em;line-height:0.5em;}
 .note{font-size:0.875em;}
+
+/*bio*/
+.avatar{width:100%;margin:0 0 5% 0;border:1px solid #f4f4f4;}
 
 /*desktop*/
 

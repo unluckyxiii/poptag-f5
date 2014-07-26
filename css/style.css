@@ -5,7 +5,8 @@ a{color:#ff5555;}
 .toppadding5{padding:5% 0;}
 .width50{width:50%;}
 .width33{width:33.33%;}
-
+.show{display:block;}
+.hide{display:none;}
 
 /*header*/
 .logo{width:100px;}
@@ -13,21 +14,26 @@ nav ul li i{color:#bbb;font-size:1.8em;}
 nav ul li:hover i{color:#fff;}
 ul.dropdown li a{font-size:1em;}
 .dropdown i{padding:0 10px;}
+.usericon{width:30px;height:30px;margin:3px 0;background:url(../img/avatar.png) no-repeat;background-size:30px 30px;
+	border-radius:15px;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+}
 
 /*post*/
-.post{float:left;width:100%;margin:20px 0;border:1px solid #f4f4f4;}
+.post{float:left;width:100%;margin:20px 0;background:#fff;border:1px solid #eee;}
 .post .hashtags{margin:10px;line-height:1.2em;}
 .post .hashtags a{color:#bbb;}
 .post .hashtags a:hover{color:#ff5555;}
 .post .date{margin:0 10px;color:#ff5555;font-weight:800;}
 .post .location{margin:0 10px 10px 10px;color:#ff5555;font-weight:800;}
 .post .interaction{list-style:none;width:100%;margin:0;}
-.post .interaction li{float:left;width:33.33%;font-size:1.5em;text-align:center;border:1px solid #f9f9f9;}
+.post .interaction li{float:left;width:33.33%;font-size:1.5em;text-align:center;background:#f9f9f9;border:1px solid #f1f1f1;}
 .post .interaction a{color:#bbb;}
 .post .interaction li:hover a{color:#ff5555;}
-.post .user{float:left;width:100%;margin:0 10px;}
+.post .user{float:left;width:100%;background:#f9f9f9;}
 .post .user a{color:#bbb;}
-.post .user img{margin:10px 10px 10px 0;border:1px solid #f9f9f9;}
+.post .user img{margin:10px;border:1px solid #f9f9f9;}
 .post .user:hover a{color:#ff5555;}
 .post .interaction .liked a, .post .interaction .added a, .post .interaction .commented a{color:#ff5555;}
 
@@ -40,10 +46,132 @@ label i{color:#ff5555;font-size:2.8em;line-height:0.5em;}
 /*bio*/
 .avatar{width:100%;margin:0 0 5% 0;border:1px solid #f4f4f4;}
 
-/*desktop*/
+/*calendar*/
+.calendarnav{background:#ff5555;margin-top:2%;padding:15px 0 0 0;}
+.calendarnav ul{margin:0;}
+.calendarlist, .calendargrid{list-style:none;}
+.calendarlist i, .calendargrid i{color:#fff;font-size:1.8em;line-height:1.2em;}
+table{border-collapse:collapse;}
+table, th, td{border:1px solid #eee;}
+.calendar{width:100%;}
+.calendar th{color:#ff5555;background:#eee;width:14.28%;text-align:center;}
+.calendar td{color:#ff5555;background:#fff;width:14.28%;text-align:center;}
+.calendar td:hover{border:3px solid #ff5555;}
+.calendar td.today{color:#fff;background:#ff5555;}
+.calendar p{display:block;width:100%;font-size:1em;margin:0;}
+.calendar span.events{display:block;width:100%;font-size:1.5em;}
 
+.calendareventlist{float:left;width:100%;}
+.calendarevent{float:right;width:85%;margin-bottom:20px;background:#fff;border:1px solid #eee;position:relative;}
+.calendarevent .eventdetails{display:inline-block;float:right;width:70%;}
+.calendarevent .hashtags{margin:10px;line-height:1.2em;}
+.calendarevent .hashtags a{color:#bbb;}
+.calendarevent .hashtags a:hover{color:#ff5555;}
+.calendarevent .date{margin:0 10px;color:#ff5555;font-weight:800;}
+.calendarevent .location{margin:0 10px 10px 10px;color:#ff5555;font-weight:800;}
+.calendarevent .interaction li{float:left;width:33.33%;font-size:1.5em;text-align:center;background:#f9f9f9;border:1px solid #f1f1f1;}
+.calendarevent .interaction a{color:#bbb;}
+.calendarevent .interaction li:hover a{color:#ff5555;}
+.calendarevent .user a{color:#bbb;}
+.calendarevent .user img{margin:10px;border:1px solid #f9f9f9;}
+.calendarevent .user:hover a{color:#ff5555;}
+.calendarevent .interaction .liked a, .calendarevent .interaction .added a, .calendarevent .interaction .commented a{color:#ff5555;}
+.calendareventdate{float:left;width:15%;}
+.calendareventdate span{float:left;padding:10%;color:#fff;background:url(../img/calendar.png) no-repeat;background-size:100% auto;font-size:1.7em;line-height:1.7em;}
 
-/*tablet*/
-
-
-/*mobile*/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	.desktoponly{display:none;}
+	.mobileonly{display:block;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding-bottom:92px;}
+	.calendarevent .interaction{list-style:none;width:100%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:100%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+	.desktoponly{display:none;}
+	.mobileonly{display:block;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding-bottom:92px;}
+	.calendarevent .interaction{list-style:none;width:100%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:100%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+	.desktoponly{display:none;}
+	.mobileonly{display:block;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding-bottom:92px;}
+	.calendarevent .interaction{list-style:none;width:100%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:100%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+	.desktoponly{display:block;}
+	.mobileonly{display:none;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding:0;}
+	.calendarevent .interaction{list-style:none;width:70%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:70%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+	.desktoponly{display:block;}
+	.mobileonly{display:none;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding:0;}
+	.calendarevent .interaction{list-style:none;width:70%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:70%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	.desktoponly{display:none;}
+	.mobileonly{display:block;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding:0;}
+	.calendarevent .interaction{list-style:none;width:70%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:70%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1024px) {
+	.desktoponly{display:block;}
+	.mobileonly{display:none;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding:0;}
+	.calendarevent .interaction{list-style:none;width:70%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:70%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+	.desktoponly{display:block;}
+	.mobileonly{display:none;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding:0;}
+	.calendarevent .interaction{list-style:none;width:70%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:70%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}
+ 
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	.desktoponly{display:none;}
+	.mobileonly{display:block;}
+	.calendarevent .eventphoto{display:inline-block;width:30%;padding-bottom:92px;}
+	.calendarevent .interaction{list-style:none;width:100%;margin:0;position:absolute;bottom:52px;right:0;}
+	.calendarevent .user{width:100%;background:#f9f9f9;position:absolute;bottom:0;right:0;}
+}

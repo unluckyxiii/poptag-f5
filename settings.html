@@ -1,0 +1,214 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>poptag | settings</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="home.html"><img class="logo" src="img/logo-209x60.png" /></a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+    
+      <section class="top-bar-section">
+        <ul class="right">
+        	<li><a href="#"><i class="fi-plus"></i></a></li>
+            <li><a href="#"><i class="fi-magnifying-glass"></i></a></li>
+            <li><a href="calendar-grid.html"><i class="fi-calendar"></i></a></li>
+            <li class="has-dropdown">
+                <a href="#"><div class="usericon"></div></a>
+                <ul class="dropdown">
+                    <li><a href="profile.html"><i class="fi-torso"></i>Profile</a></li>
+                    <li><a href="settings.html"><i class="fi-wrench"></i>Settings</a></li>
+                    <li><a href="index.html"><i class="fi-power"></i>Sign Out</a></li>
+                </ul>
+            </li>
+        </ul>
+      </section>
+    </nav>
+    
+    <div class="row toppadding5">
+      <div class="small-12 medium-12 large-12 columns">
+      	<div class="dialogue">
+	        <ul class="tabs" data-tab data-options="deep_linking:true">
+              <li class="tab-title width50 active" id="notificationtab"><a href="#notification">Notification</a></li>
+              <li class="tab-title width50" id="biotab"><a href="#bio">Bio</a></li>
+            </ul>
+            <div class="tabs-content">
+              
+              <div class="content active" id="notification">
+                <div class="small-12 medium-12 large-12 columns">
+                  <div class="bottompadding20 small-8 medium-10 large-10 columns">Email me when someone likes my pops</div>
+                  <div class="switch small-4 medium-2 large-2 columns">
+                    <input id="likeCheckboxSwitch" type="checkbox">
+                    <label for="likeCheckboxSwitch"></label>
+                  </div> 
+                  <div class="bottompadding20 small-8 medium-10 large-10 columns">Email me when someone comments on my pops</div>
+                  <div class="switch small-4 medium-2 large-2 columns">
+                    <input id="commentCheckboxSwitch" type="checkbox">
+                    <label for="commentCheckboxSwitch"></label>
+                  </div>
+                  <div class="bottompadding20 small-8 medium-10 large-10 columns">Email me when someone shares on my pops</div>
+                  <div class="switch small-4 medium-2 large-2 columns">
+                    <input id="shareCheckboxSwitch" type="checkbox">
+                    <label for="shareCheckboxSwitch"></label>
+                  </div>
+                  <div class="bottompadding20 small-8 medium-10 large-10 columns">Email me for any poptag updates</div>
+                  <div class="switch small-4 medium-2 large-2 columns">
+                    <input id="updateCheckboxSwitch" type="checkbox">
+                    <label for="updateCheckboxSwitch"></label>
+                  </div>
+                    
+                </div>
+              </div>
+              
+              <div class="content" id="bio">
+                <form>
+                  <div class="row">
+                    <div class="small-10 medium-10 large-10 small-centered">
+                      <div class="row">
+                        <div class="small-3 medium-3 large-3 columns">
+                          <label for="avatar" class="right"><i class="fi-camera"></i></label>
+                        </div>
+                        <div class="small-9 medium-4 large-4 columns">
+                          <a href="#"><img class="avatar" src="img/avatar.png" /></a>
+                        </div>
+                        <div class="small-9 medium-5 large-5 columns">
+                          <textarea id="yourself" placeholder="Say something about yourself" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="fullname" class="right"><i class="fi-torso"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="fullname" placeholder="Full name">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="username" class="right"><i class="fi-at-sign"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="username" placeholder="Username">
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="email" class="right"><i class="fi-mail"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="email" placeholder="Email address">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="password" class="right"><i class="fi-lock"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="password" placeholder="Change password">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="dateofbirth" class="right"><i class="fi-calendar"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <div class="small-4 columns">
+                            <select id="day">
+                                <option value="">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                           </div>
+                           <div class="small-4 columns">
+                            <select id="month">
+                                <option value="">Month</option>
+                                <option value="jan">Jan</option>
+                                <option value="feb">Feb</option>
+                                <option value="mar">Mar</option>
+                              </select>
+                           </div>
+                           <div class="small-4 columns">
+                            <select id="year">
+                                <option value="">Year</option>
+                                <option value="1910">1910</option>
+                                <option value="1911">1911</option>
+                                <option value="1912">1912</option>
+                              </select>
+                           </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="gender" class="right"><i class="fi-male-female"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                            <select id="gender">
+                              <option value="">Select gender</option>
+                              <option value="male">Male</option>
+                              <option value="female">Female</option>
+                              <option value="undisclosed">Preferred not to tell</option>
+                            </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                          <label for="location" class="right"><i class="fi-marker"></i></label>
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="text" id="location" placeholder="Location">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="small-3 columns">
+                        </div>
+                        <div class="small-9 columns">
+                          <input type="submit" class="button expand" id="bioupdate" value="Update">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+            </div>
+      	</div>
+      </div>
+    </div><!--register & sign in-->
+    
+    <ol class="joyride-list" data-joyride>
+      <li data-id="notificationtab" data-text="Next" data-options="tip_location:top;tip_animation:fade">
+        <p>Toggle notification.</p>
+      </li>
+      <li data-id="biotab" data-button="Next" data-options="tip_location:top;tip_animation:fade">
+        <p>Update your latest info.</p>
+      </li>
+      <li data-button="Enjoy">
+        <p>Tell your friend about us if you like poptag!</p>
+      </li>
+    </ol><!--joyride-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.accordion.js"></script>
+    <script src="js/foundation/foundation.joyride.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+	  $(document).foundation('joyride', 'start');
+	</script>
+  </body>
+</html>

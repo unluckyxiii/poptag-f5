@@ -3,6 +3,7 @@ html{font-family:Helvetica,Arial,sans-serif;color:#666;background:#f4f4f4;}
 a{color:#ff5555;}
 .toppadding{padding:10% 0;}
 .toppadding5{padding:5% 0;}
+.bottompadding20{padding-bottom:20px;}
 .width50{width:50%;}
 .width33{width:33.33%;}
 .show{display:block;}
@@ -43,8 +44,32 @@ form{padding-top:2%;}
 label i{color:#ff5555;font-size:2.8em;line-height:0.5em;}
 .note{font-size:0.875em;}
 
-/*bio*/
+/*settings*/
 .avatar{width:100%;margin:0 0 5% 0;border:1px solid #f4f4f4;}
+
+/*profile*/
+.userdisplayphoto{width:150px;height:150px;margin:3px 0;background:url(../img/avatar.png) no-repeat;background-size:150px 150px;float:right;
+	border-radius:75px;
+	-webkit-border-radius:75px;
+	-moz-border-radius:75px;
+}
+.userdisplayphoto:hover{
+	-webkit-box-shadow: 0 0 0 5px rgba(255,85,85,1);
+	-moz-box-shadow: 0 0 0 5px rgba(255,85,85,1);
+	box-shadow: 0 0 0 5px rgba(255,85,85,1);
+}
+.userdisplayname{font-size:2em;margin:27px 0 10px 0;}
+.userlocation{font-size:1.5em;}
+.usersocial{color:#fff;background:#ff5555;text-align:center;margin:15px 0;}
+.usersocial a{color:#fff;}
+.usersocial a:hover{color:#ddd;}
+.usersocial ul{list-style:none;margin:0;}
+.usersocial li{display:inline-block;font-size:1.5em;margin:0 5px 0 0;}
+.userpopularity{font-size:0.8em;margin-top:15px;margin-left:-1em;}
+.userscore{font-size:2em;margin-left:-0.4em;}
+.uservalue{font-size:0.8em;margin-top:15px;margin-left:-1em;}
+.usermoney{font-size:2em;margin-left:-0.4em;}
+
 
 /*calendar*/
 .calendarnav{background:#ff5555;margin-top:2%;padding:15px 0 0 0;}
